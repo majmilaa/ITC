@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Payroll System</title>
+    <link rel="stylesheet" href="payroll.css">
+</head>
+<body>
+    <a href="index.html"> Home </a>
+    <h1>Simple Payroll System</h1>
+    
+    <button id="addEmployeeBtn" class="button">Add Employee</button>
+    <button id="removeEmployeeBtn" class="button">Remove Employee</button>
+    <button id="clearPayroll" class="button">Clear Payroll</button>
+    <button id="generateEmployee" class="button">Generate Employee</button>
+
+    <table id="payrollTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Days Worked</th>
+                <th>Daily Rate</th>
+                <th>Gross Pay</th>
+                <th>Deduction</th>
+                <th>Net Pay</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- Add Employee Modal -->
+    <div id="addEmployeeModal" class="modal">
+        <span class="close_btn" id="closeAddModal">&times;</span>
+        <h2>Add Employee</h2>
+        <form id="addEmployeeForm">
+            <label for="employeeName">Name:</label>
+            <input type="text" id="employeeName" required><br>
+
+            <label for="daysWorked">Days Worked:</label>
+            <input type="number" id="daysWorked" required><br>
+
+            <label for="dailyRate">Daily Rate:</label>
+            <input type="number" id="dailyRate" required><br>
+
+            <label for="deductionAmount">Deduction:</label>
+            <input type="number" id="deductionAmount" required><br><br>
+
+            <button type="submit" class="button">Add Employee</button>
+        </form>
+    </div>
+
+    <!-- Remove Employee Modal -->
+    <div id="removeEmployeeModal" class="modal">
+        <span class="close_btn" id="closeRemoveModal">&times;</span>
+        <h2>Remove Employee</h2>
+        <form id="removeEmployeeForm">
+            <label for="employeeNo">Employee Number:</label>
+            <input type="number" id="employeeNo" required><br><br>
+            <button type="submit" class="button">Remove Employee</button>
+        </form>
+    </div>
+
+    <script src="payroll.js"></script>
+</body>
+</html>

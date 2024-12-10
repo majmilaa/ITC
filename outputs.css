@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Goth';
+    src: url(fonts/Osgard\ Pro.otf) format('truetype');
+}
+
+body {
+    font-family: 'Goth', serif; 
+    background-color: #1a1a1a;
+    color: #f4f4f4; 
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #c9b037; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px #000, 0 0 10px #c9b037;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #c9b037, 0 0 20px #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #c9b037; 
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #000, 0 0 20px #c9b037;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #c9b037;
+    margin: 20px 0 10px;
+    text-shadow: 0 0 8px #000, 0 0 15px #c9b037;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #c9b037;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #555;
+    background-color: #2b2b2b;
+    color: #f4f4f4;
+    font-family: 'Goth', serif;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto 10px;
+    display: block;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+input[readonly] {
+    background-color: #333; 
+    border: 1px solid #444;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: 'Goth', serif;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid #555;
+    cursor: pointer;
+    margin-top: 10px;
+    text-shadow: 0 0 5px #000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #555;
+    color: #c9b037; 
+    border-color: #c9b037;
+}
+
+body > label,
+body > input,
+body > button {
+    display: inline-block;
+    margin: 5px auto;
+    text-align: left;
+}

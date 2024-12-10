@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Goth';
+    src: url(fonts/Osgard\ Pro.otf) format('truetype');
+}
+
+body {
+    font-family: 'Goth', serif; 
+    background-color: #1a1a1a; 
+    color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #c9b037; 
+    text-shadow: 0 0 10px #000, 0 0 20px #c9b037;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #c9b037; 
+    border: 1px solid #555;
+    cursor: pointer;
+    font-family: 'Goth', serif;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    background-color: #444;
+    color: #fff;
+    border-color: #c9b037;
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #2b2b2b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    border: 1px solid #444;
+    padding: 10px;
+    text-align: center;
+    color: #f4f4f4;
+}
+
+th {
+    background-color: #444;
+    font-size: 1.1rem;
+    color: #c9b037; 
+    text-shadow: 0 0 5px #000;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #333;
+    color: #c9b037; 
+    text-shadow: 0 0 5px #000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #444;
+    background: #222;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+    color: #f4f4f4;
+}
+
+.modal.active {
+    display: block;
+}
+
+.close_btn {
+    cursor: pointer;
+    color: #c9b037;
+    float: right;
+    font-size: 1.2rem;
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 5px;
+    color: #c9b037;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #555;
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #555;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+    color: #c9b037;
+}
+
+table {
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #c9b037; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 0 5px #000, 0 0 10px #c9b037;
+}
+
+a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px #c9b037, 0 0 20px #fff;
+}
